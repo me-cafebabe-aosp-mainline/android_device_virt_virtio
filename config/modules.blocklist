@@ -1,0 +1,5 @@
+blocklist goldfish_address_space.ko
+blocklist goldfish_battery.ko
+blocklist goldfish_pipe.ko
+blocklist goldfish_sync.ko
+blocklist vkms.ko

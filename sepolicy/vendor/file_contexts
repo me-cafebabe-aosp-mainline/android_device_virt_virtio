@@ -1,0 +1,10 @@
+# Block devices
+/dev/block/vda	u:object_r:super_block_device:s0
+/dev/block/vdb	u:object_r:metadata_block_device:s0
+/dev/block/vdc	u:object_r:userdata_block_device:s0
+/dev/block/sda1	u:object_r:sdcard_block_device:s0
+
+# Graphics
+/dev/dri		u:object_r:gpu_device:s0
+/dev/dri/card0		u:object_r:graphics_device:s0
+/dev/dri/renderD128	u:object_r:gpu_device:s0
