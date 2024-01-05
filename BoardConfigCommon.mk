@@ -10,9 +10,12 @@ include device/virt/common/BoardConfigCommon.mk
 USES_DEVICE_VIRT_VIRTIO := true
 DEVICE_PATH := device/virt/virtio
 
+# Bootconfig
+BOARD_BOOTCONFIG += \
+    androidboot.hardware=virtio
+
 # Kernel
 BOARD_KERNEL_CMDLINE += \
-    androidboot.hardware=virtio \
     androidboot.partition_map=vda,super\;vdb,metadata\;vdc,userdata\;sda1,sdcard
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
